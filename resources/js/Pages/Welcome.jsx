@@ -1,4 +1,5 @@
 import { Link, Head } from '@inertiajs/react';
+import { Button } from '@nextui-org/react';
 
 export default function Welcome({ auth, laravelVersion, phpVersion }) {
     return (
@@ -30,9 +31,9 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                             </Link>
                         </>
                     )}
-                </div>
-
-                <div className="max-w-7xl mx-auto p-6 lg:p-8">
+                </div>  
+                        <Button color='primary'>Hola soy german</Button>
+                {/* <div className="max-w-7xl mx-auto p-6 lg:p-8">
                     <div className="flex justify-center">
                         <svg
                             viewBox="0 0 62 65"
@@ -319,7 +320,7 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                             Laravel v{laravelVersion} (PHP v{phpVersion})
                         </div>
                     </div>
-                </div>
+                </div> */}
             </div>
 
             <style>{`
