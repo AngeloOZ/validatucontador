@@ -11,7 +11,7 @@ export default function LoginPage({ canResetPassword }) {
                 <h1 className="text-4xl font-bold text-center mb-6">
                     Valida tu contador
                 </h1>
-                <ImageCenter height="350" className="fill-perseo" />
+                <ImageCenter height="350" className="fill-dimPerseo" />
             </div>
             <div className="w-full md:w-1/3 flex items-center justify-center">
                 <Login canResetPassword={canResetPassword} />

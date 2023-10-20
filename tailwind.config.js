@@ -14,9 +14,25 @@ export default {
 
     theme: {
         extend: {
+            colors: {
+                dimPrimary: "#00040f",
+                dimPerseo: "var(--dimPerseo)",
+                dimWhite: "rgba(255, 255, 255, 0.7)",
+                dimDark: "#00040f",
+                dimBlue: "rgba(9, 151, 124, 0.1)",
+            },
             fontFamily: {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
+                poppins: ["Poppins", "sans-serif"],
             },
+        },
+        screens: {
+            xs: "480px",
+            ss: "620px",
+            sm: "768px",
+            md: "1060px",
+            lg: "1200px",
+            xl: "1700px",
         },
     },
 

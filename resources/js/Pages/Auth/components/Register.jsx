@@ -129,6 +129,9 @@ export const Register = () => {
             transition={{ duration: 0.5 }}
             className="py-8 px-8 w-[400px] mx-auto bg-white rounded-xl shadow-xl space-y-4"
         >
+            <Link href={route("landing")}>
+                <h1 className="text-center text-6xl">Logo</h1>
+            </Link>
             <h2 className="text-2xl font-bold text-center">
                 Que gusto que te unas
             </h2>
