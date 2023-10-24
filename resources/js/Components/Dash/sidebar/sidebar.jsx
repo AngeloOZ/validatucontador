@@ -1,27 +1,34 @@
-import React from "react";
-import { usePage } from "@inertiajs/react";
+import { usePage, router } from "@inertiajs/react";
 import { Avatar, Tooltip } from "@nextui-org/react";
 
+import { Sidebar } from "./sidebar.styles";
 import { useSidebarContext } from "@/context/dash";
+
 import { CollapseItems, SidebarItem, SidebarMenu } from ".";
 import { AccountsIcon } from "@/Components/icons";
-import { Sidebar } from "./sidebar.styles";
 import { ListMenuDashItems } from "../list-menu-dash";
 
 export const SidebarWrapper = () => {
     const { collapsed, setCollapsed } = useSidebarContext();
 
+    // const router = router();
+
+    console.log(router);
+
     return (
         <aside className="h-screen z-[202] sticky top-0">
-            {collapsed ? (
+            {collapsed && (
                 <div className={Sidebar.Overlay()} onClick={setCollapsed} />
-            ) : null}
+            )}
             <div
                 className={Sidebar({
                     collapsed: collapsed,
                 })}
             >
                 <div className={Sidebar.Header()}>
+                    Lorem ipsum dolor sit amet
+                    <br />
+                    elit. Nisi, temporibus!
                     {/* <CompaniesDropdown /> */}
                 </div>
                 <div className="flex flex-col justify-between h-full">
@@ -65,7 +72,11 @@ export const SidebarWrapper = () => {
 };
 
 const SubRenderItems = ({ item }) => {
-    const { url } = usePage();
+    const { url, component } = usePage();
+
+    // console.log(item.href);
+    // console.log(url);
+    // console.log(component);
 
     if (item.href) {
         return (

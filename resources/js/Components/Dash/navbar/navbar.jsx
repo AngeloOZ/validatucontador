@@ -31,7 +31,7 @@ export const NavbarWrapper = ({ children }) => {
                     </NavbarContent>
                 </NavbarContent>
             </Navbar>
-            <div className="px-10">{children}</div>
+            <div className="p-5">{children}</div>
         </div>
     );
 };

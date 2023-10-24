@@ -8,9 +8,7 @@ export const useLockedBody = (initialLocked = false) => {
 
    // Do the side effect before render
    useIsomorphicLayoutEffect(() => {
-
-      console.log(locked);
-
+      
       if (!locked) {
          return;
       }

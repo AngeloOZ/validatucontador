@@ -7,7 +7,7 @@ export const ListMenuDashItems = [
         items: [
             {
                 title: "Home",
-                href: "/login",
+                href: route('login'),
                 icon: <FaHome />,
             },
         ],

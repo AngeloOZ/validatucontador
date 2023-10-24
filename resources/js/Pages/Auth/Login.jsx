@@ -18,8 +18,8 @@
 //     );
 // }
 
-import { DashboardLayout } from "@/Layouts/DashboardLayout";
 import React from "react";
+import { DashboardLayout } from "@/Layouts/DashboardLayout";
 
 const Login = () => {
     return <DashboardLayout>holaaaaaa</DashboardLayout>;
